@@ -29,6 +29,7 @@ function HomepageHeader() {
   );
 }
 
+<script defer src="https://cloud.umami.is/script.js" data-website-id="762dd854-4f57-4375-bdb6-3e1e4d46e644"></script>
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (

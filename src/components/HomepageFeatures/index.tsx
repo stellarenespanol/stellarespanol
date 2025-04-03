@@ -40,6 +40,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
+<script defer src="https://cloud.umami.is/script.js" data-website-id="762dd854-4f57-4375-bdb6-3e1e4d46e644"></script>
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
