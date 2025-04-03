@@ -32,12 +32,16 @@ const config: Config = {
   },
 
   // Agregar el script de Umami para análisis de estadísticas
-  scripts: [
+  scripts: [],
+  headTags: [
     {
-      src: 'https://cloud.umami.is/script.js',
-      defer: true,
-      'data-website-id': '762dd854-4f57-4375-bdb6-3e1e4d46e644',
-    },
+      tagName: 'script',
+      attributes: {
+        defer: 'true',
+        src: 'https://cloud.umami.is/script.js',
+        'data-website-id': '762dd854-4f57-4375-bdb6-3e1e4d46e644'
+      }
+    }
   ],
 
   presets: [
