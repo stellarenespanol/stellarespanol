@@ -6,27 +6,50 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #333333;
+  --ifm-color-primary-lighter: #666666;
+  --ifm-color-primary-lightest: #999999;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Colores adicionales para elementos de la interfaz */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #000000;
+  --ifm-navbar-link-hover-color: #333333;
+  --ifm-footer-background-color: #000000;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #dddddd;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-button-background-color: #000000;
+  --ifm-button-color: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #dddddd;
+  --ifm-color-primary-darker: #cccccc;
+  --ifm-color-primary-darkest: #aaaaaa;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Colores adicionales para el tema oscuro */
+  --ifm-navbar-background-color: #111111;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #dddddd;
+  --ifm-background-color: #1a1a1a;
+  --ifm-footer-background-color: #000000;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #dddddd;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-button-background-color: #ffffff;
+  --ifm-button-color: #000000;
 }
 
 /* Ajustar el tamaño y posición del logo horizontal en el navbar */
@@ -82,4 +105,93 @@
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+/* Estilos adicionales para botones en blanco y negro */
+.button {
+  background-color: var(--ifm-button-background-color);
+  color: var(--ifm-button-color);
+  border: 1px solid currentColor;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Personalizar enlaces con estilo en blanco y negro */
+a {
+  color: var(--ifm-color-primary);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-light);
+  text-decoration: none;
+}
+
+/* Estilo para cards y contenedores en blanco y negro */
+.card {
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .card {
+  border-color: #333333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Personalización del footer con degradados en tonos morados */
+.footer {
+  background-image: linear-gradient(135deg, #f9f9f9 0%, #f2eeff 40%, #eae0ff 70%, #e2d5ff 100%);
+}
+
+[data-theme='dark'] .footer {
+  background-image: linear-gradient(135deg, #141414 0%, #151417 25%, #16161b 50%, #17171e 75%, #181821 100%);
+}
+
+/* Mejorar el contraste del texto del footer */
+.footer__title {
+  color: #6a1b9a;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #ba68c8;
+}
+
+.footer__item a {
+  color: #333333;
+  transition: color 0.2s ease;
+}
+
+.footer__item a:hover {
+  color: #6a1b9a;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .footer__item a {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .footer__item a:hover {
+  color: #ce93d8;
+}
+
+.footer__copyright {
+  color: #666666;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: #aaaaaa;
 }

@@ -3,9 +3,37 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background-image: linear-gradient(315deg, #fefeff 0%, #f2efff 40%, #ece5ff 70%, #e5dcff 100%);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+/* Estilo para las tarjetas de características */
+.featureCard {
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(126, 87, 194, 0.12);
+  border: 1px solid rgba(126, 87, 194, 0.1);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(126, 87, 194, 0.18);
+}
+
+/* Estilos para el tema oscuro */
+[data-theme='dark'] .features {
+  background-image: linear-gradient(315deg, #141414 0%, #16151a 25%, #181720 50%, #1a1826 75%, #1c192c 100%);
+}
+
+[data-theme='dark'] .featureCard {
+  background-color: rgba(26, 26, 26, 0.95);
+  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.1);
+  border: 1px solid rgba(156, 39, 176, 0.1);
 }

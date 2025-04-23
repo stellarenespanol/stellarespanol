@@ -95,7 +95,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Atividades', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/stellarenespanol',
           label: 'GitHub',
           position: 'right',
         },
