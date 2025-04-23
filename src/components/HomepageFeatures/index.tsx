@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Entorno de trabajo',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/una.svg').default,
     description: (
       <>
         Aprende a configurar tu entorno de trabajo en cualquier sistema operativo
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Conotratos inteligentes',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/tres.svg').default,
     description: (
       <>
         Aprende a usar Soroban, el lenguaje para programar contratos inteligentes en 
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Dapps',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/dos.svg').default,
     description: (
       <>
        Crea aplicaciones web 3 con soroban  y Front end 

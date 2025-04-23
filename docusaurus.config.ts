@@ -117,16 +117,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'Warpcast',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'Telegram',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/platohedro',
             },
           ],
         },
@@ -139,12 +139,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/stellarenespanol',
             },
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Stellar en español ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,
