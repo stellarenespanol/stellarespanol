@@ -28,3 +28,58 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Ajustar el tamaño y posición del logo horizontal en el navbar */
+.navbar__logo img {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-2px); /* Subir ligeramente el logo */
+  filter: brightness(1); /* Normal en modo claro */
+}
+
+/* Invertir colores del logo en modo oscuro para hacerlo visible */
+[data-theme='dark'] .navbar__logo img {
+  filter: invert(1) brightness(1.8); /* Invertir colores en modo oscuro */
+}
+
+/* Alinear correctamente el logo con el texto */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 8px;
+}
+
+/* Ajustar alineación vertical del navbar */
+.navbar__inner {
+  align-items: center;
+  display: flex;
+  height: 60px;
+}
+
+/* Ajustar posición vertical del título */
+.navbar__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+/* Ajustar los elementos del menú para alinear con el logo */
+.navbar__items {
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+/* Asegurar que todos los elementos del menú estén alineados */
+.navbar__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

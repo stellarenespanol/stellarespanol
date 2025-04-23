@@ -4,6 +4,10 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Installation
 
+
+use node 18 
+
+
 ```
 $ yarn
 ```
