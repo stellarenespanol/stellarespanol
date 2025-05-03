@@ -133,10 +133,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Atividades',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Atividades',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/stellarenespanol',

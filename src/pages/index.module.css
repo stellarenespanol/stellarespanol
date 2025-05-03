@@ -62,3 +62,30 @@
   color: #ffffff;
   box-shadow: 0 6px 16px rgba(156, 39, 176, 0.2);
 }
+
+/* Estilos para el logo principal */
+.logoHeader {
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .logoHeader {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logoHeader {
+    max-width: 280px;
+  }
+}
+
+/* Mejora de visibilidad para el tema oscuro */
+[data-theme='dark'] .logoHeader {
+  filter: invert(1) brightness(1.8); /* Mismo filtro que el navbar logo */
+  -webkit-filter: invert(1) brightness(1.8);
+}
