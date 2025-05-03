@@ -13,9 +13,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <div className="hero__title">
+        <div className={styles.logoContainer}>
           <img 
-            src="/img/stellarenespanol2.png" 
+            src="/img/astro.png" 
+            alt="Astronauta Stellar" 
+            className={styles.astroLogo}
+          />
+          <img 
+            src="/img/stellarenespanol3.png" 
             alt="Stellar en español" 
             className={styles.logoHeader}
           />

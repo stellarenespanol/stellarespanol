@@ -63,29 +63,71 @@
   box-shadow: 0 6px 16px rgba(156, 39, 176, 0.2);
 }
 
+/* Contenedor para las imágenes del logo */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0;
+  position: relative;
+}
+
+/* Estilo para el astronauta */
+.astroLogo {
+  max-height: 150px;
+  width: auto;
+  display: block;
+  margin-right: -120px; /* Aumentado el valor negativo para reducir el espacio */
+  position: relative;
+  z-index: 2;
+}
+
+/* Ajustes para modo oscuro del astronauta */
+[data-theme='dark'] .astroLogo {
+  filter: brightness(1.2);
+  -webkit-filter: brightness(1.2);
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .astroLogo {
+    max-height: 120px;
+    margin-right: -95px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .astroLogo {
+    max-height: 90px;
+    margin-right: -75px;
+  }
+}
+
 /* Estilos para el logo principal */
 .logoHeader {
-  max-width: 450px;
-  height: auto;
-  margin: 0 auto;
+  max-height: 150px;
+  width: auto;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 /* Ajuste para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .logoHeader {
-    max-width: 350px;
+    max-height: 120px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .logoHeader {
-    max-width: 280px;
+    max-height: 90px;
   }
 }
 
 /* Mejora de visibilidad para el tema oscuro */
 [data-theme='dark'] .logoHeader {
-  filter: invert(1) brightness(1.8); /* Mismo filtro que el navbar logo */
+  filter: invert(1) brightness(1.8);
   -webkit-filter: invert(1) brightness(1.8);
 }
